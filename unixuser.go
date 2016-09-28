@@ -5,6 +5,6 @@ import (
   "os/user"
 )
 
-func Lookup(username string) (*User, error) {
+func Lookup(username string) (*user.User, error) {
   return user.Lookup(username)
 }
