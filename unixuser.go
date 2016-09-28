@@ -4,3 +4,7 @@ package unixuser
 import (
   "os/user"
 )
+
+func Lookup(username string) (*User, error) {
+  return user.Lookup(username)
+}
